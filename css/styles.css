@@ -135,6 +135,38 @@ button {
   color: #757575;
 }
 /*========= END TEAM ========*/
+
+/*========= PORTFOLIO ========*/
+.portfolio-button {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.63;
+  text-align: center;
+  letter-spacing: 0.03em;
+  background-color: #f5f4fa;
+  cursor: pointer;
+}
+.portfolio-button:hover,
+.portfolio-button:focus {
+  color: #ffffff;
+  background-color: var(--accent-color);
+}
+.portfolio-jobs-title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: #212121;
+}
+.portfolio-jobs-text {
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.03em;
+  color: #757575;
+}
+/*========= END PORTFOLIO ========*/
+
+/*========= FOOTER ========*/
 .footer {
   background-color: #2f303a;
 }
