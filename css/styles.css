@@ -2,6 +2,15 @@
   --main-font: 'Roboto', sans-serif;
   --secondary-font: 'Raleway', sans-serif;
   --accent-color: #2196f3;
+  --font-color: #212121;
+  --secondary-color: #ffffff;
+  --logo-header-color: #000000;
+  --logo-part-color: #2196f3;
+  --text-color: #757575;
+  --hero-footer-backgroud-color: #2f303a;
+  --button-background-color: #188ce8;
+  --portfolio-button-color: #f5f4fa;
+  --mail-link-color: rgba(255, 255, 255, 0.6);
 }
 
 .list {
@@ -12,8 +21,8 @@
 }
 body {
   font-family: var(--main-font);
+  color: var(--font-color);
   font-weight: 400;
-  color: #212121;
   font-size: 14px;
 }
 
@@ -24,15 +33,18 @@ body {
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
-  color: #000000;
+  color: var(--logo-header-color);
 }
 .logo-part {
-  color: #2196f3;
+  color: var(--logo-part-color);
 }
-.menu-link {
+.menu-link,
+.contacts-link {
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
+}
+.menu-link {
   color: inherit;
 }
 .menu-link:hover,
@@ -43,10 +55,7 @@ body {
   color: var(--accent-color);
 }
 .contacts-link {
-  font-weight: 500;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-  color: #757575;
+  color: var(--text-color);
 }
 .contacts-link:hover,
 .contacts-link:focus {
@@ -57,7 +66,7 @@ body {
 
 /*========= HERO ========*/
 .hero {
-  background-color: #2f303a;
+  background-color: var(--hero-footer-backgroud-color);
 }
 .hero-title {
   font-weight: 900;
@@ -66,20 +75,20 @@ body {
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  color: #ffffff;
+  color: var(--secondary-color);
 }
 .modal-button {
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.06em;
-  color: #ffffff;
+  color: var(--secondary-color);
   background-color: var(--accent-color);
   cursor: pointer;
 }
 .modal-button:hover,
 .modal-button:focus {
-  background-color: #188ce8;
+  background-color: var(--button-background-color);
 }
 button {
   font-family: inherit;
@@ -96,12 +105,13 @@ button {
 .advantages-text {
   line-height: 1.71;
   letter-spacing: 0.03em;
-  color: #757575;
+  color: var(--text-color);
 }
 /*========= END ADVANTAGES ========*/
 
 /*========= GALLERY ========*/
-.gallery-title {
+.gallery-title,
+.team-title-section {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
@@ -111,26 +121,18 @@ button {
 /*========= END GALLERY ========*/
 
 /*========= TEAM ========*/
-.team-title-section {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.17;
-  text-align: center;
-  letter-spacing: 0.03em;
-}
-.team-title {
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.19;
-  text-align: center;
-  letter-spacing: 0.03em;
-}
+.team-title,
 .team-text {
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
   letter-spacing: 0.03em;
-  color: #757575;
+}
+.team-title {
+  font-weight: 500;
+}
+.team-text {
+  color: var(--text-color);
 }
 /*========= END TEAM ========*/
 
@@ -141,12 +143,12 @@ button {
   line-height: 1.63;
   text-align: center;
   letter-spacing: 0.03em;
-  background-color: #f5f4fa;
+  background-color: var(--portfolio-button-color);
   cursor: pointer;
 }
 .portfolio-button:hover,
 .portfolio-button:focus {
-  color: #ffffff;
+  color: var(--secondary-color);
   background-color: var(--accent-color);
 }
 .portfolio-jobs-title {
@@ -154,19 +156,19 @@ button {
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
-  color: #212121;
+  color: var(--font-color);
 }
 .portfolio-jobs-text {
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.03em;
-  color: #757575;
+  color: var(--text-color);
 }
 /*========= END PORTFOLIO ========*/
 
 /*========= FOOTER ========*/
 .footer {
-  background-color: #2f303a;
+  background-color: var(--hero-footer-backgroud-color);
 }
 .logo-footer {
   font-family: var(--secondary-font);
@@ -174,25 +176,27 @@ button {
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
-  color: #ffffff;
+  color: var(--secondary-color);
 }
 
 .address {
   font-style: normal;
+  font-size: inherit;
 }
-.address-link {
+.address-link,
+.mail-link {
   line-height: 1.71;
   letter-spacing: 0.03em;
-  color: #ffffff;
+}
+.address-link {
+  color: var(--secondary-color);
 }
 .address-link:hover,
 .address-link:focus {
   color: var(--accent-color);
 }
 .mail-link {
-  line-height: 1.71;
-  letter-spacing: 0.03em;
-  color: rgba(255, 255, 255, 0.6);
+  color: var(--mail-link-color);
 }
 .mail-link:hover,
 .mail-link:focus {
